@@ -1,0 +1,5 @@
+Tatung University is located in Taiwan.
+
+RAG means Retrieval-Augmented Generation.
+
+AIoT means Artificial Intelligence of Things.
