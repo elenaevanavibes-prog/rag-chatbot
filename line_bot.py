@@ -64,7 +64,7 @@ for link in links:
     link = link.strip()
 
     try:
-        response = requests.get(link)
+        response = requests.get(link, timeout=10)
 
         soup = BeautifulSoup(response.text, "html.parser")
 
@@ -77,6 +77,8 @@ for link in links:
     except:
         print(f"Failed: {link}")
 
+with open("knowledge_base/ttu_info.txt", "r", encoding="utf-8") as file:
+    all_text += file.read()
 
 # IF NO TEXT LOADED
 if all_text.strip() == "":
@@ -139,7 +141,13 @@ def handle_message(event):
 
     # PROMPT
     prompt = f"""
-    Answer the question using the context below.
+    You are a helpful AI assistant for Tatung University (TTU) in Taiwan.
+
+    Always answer based on the provided context.
+
+    If the user says TTU, understand it as Tatung University, not Texas Tech University.
+
+    Keep answers short, clear, and student-friendly.
 
     Context:
     {context}
