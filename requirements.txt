@@ -1,7 +1,11 @@
 flask
 line-bot-sdk
-langchain-groq
+langchain
+langchain-community
+langchain-google-genai
+faiss-cpu
 python-dotenv
-requests
+pypdf
 beautifulsoup4
+requests
 gunicorn
