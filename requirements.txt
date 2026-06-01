@@ -9,4 +9,5 @@ pypdf
 beautifulsoup4
 requests
 gunicorn
+langchain-core
 langchain-text-splitters

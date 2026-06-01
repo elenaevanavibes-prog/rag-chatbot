@@ -22,8 +22,7 @@ from bs4 import BeautifulSoup
 from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import FakeEmbeddings
-from langchain.docstore.document import Document
-
+from langchain_core.documents import Document
 from langchain_groq import ChatGroq
 
 
