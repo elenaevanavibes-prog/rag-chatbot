@@ -11,3 +11,4 @@ requests
 gunicorn
 langchain-core
 langchain-text-splitters
+langchain-groq
