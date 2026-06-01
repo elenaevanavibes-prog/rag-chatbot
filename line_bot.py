@@ -78,6 +78,11 @@ for link in links:
         print(f"Failed: {link}")
 
 
+# IF NO TEXT LOADED
+if all_text.strip() == "":
+    all_text = "TTU chatbot fallback information"
+
+
 # SPLIT TEXT
 splitter = CharacterTextSplitter(
     separator="\n",
